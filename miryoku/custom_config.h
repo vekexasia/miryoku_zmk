@@ -8,7 +8,7 @@
 U_NP,              U_NP,              U_NP,              U_NP,              U_NP,              U_NP,              U_NP,              U_NP,              U_NP,              U_NP
 
 U_MACRO(arrowfn, wait-ms = <30>; tap-ms = <40>; bindings = <&kp EQUAL &kp GT &kp SPACE &kp LBRC &kp RBRC &kp LEFT &kp RET>;)
-
+/**
 #define MIRYOKU_LAYER_MEDIA \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &arrowfn,         U_RGB_HUI,         U_RGB_SAI,         U_RGB_BRI,         U_RGB_TOG,         \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        U_EP_TOG,          \
