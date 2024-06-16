@@ -12,15 +12,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT &kp SPACE &kp LBRC &kp RBRC &kp LEFT &kp RET>;
-            wait-ms = <30>;
-            tap-ms = <40>;
         };
-      aarrowfn: aarrowfn {
+        email: email {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
-          bindings = <&kp EQUAL &kp GT &kp SPACE &kp LBRC &kp RBRC &kp LEFT &kp RET>;
-          wait-ms = <30>;
-          tap-ms = <40>;
+          bindings = <&kp V &kp E &kp K &kp E &kp X &kp A &kp S &kp I &kp A &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
       };
     };
 };
