@@ -1,0 +1,15 @@
+name: 'Temper'
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build:
+    if: github.repository_owner == 'vekexasia'
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["temper_left"]'
+      alphas: '["QWERTY"]'
+      nav: '["vi"]'
