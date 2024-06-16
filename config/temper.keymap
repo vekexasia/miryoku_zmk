@@ -11,9 +11,16 @@
         arrowfn: arrowfn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T>;
+            bindings = <&kp EQUAL &kp GT &kp SPACE &kp LBRC &kp RBRC &kp LEFT &kp RET>;
             wait-ms = <30>;
             tap-ms = <40>;
         };
+      aarrowfn: aarrowfn {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&kp EQUAL &kp GT &kp SPACE &kp LBRC &kp RBRC &kp LEFT &kp RET>;
+          wait-ms = <30>;
+          tap-ms = <40>;
+      };
     };
 };
