@@ -6,7 +6,7 @@
 #include "../miryoku/miryoku.dtsi"
 / {
     macros {
-        zmk_macro(arrowfn,
+        ZMK_MACRO(arrowfn,
             wait-ms = <30>;
             tap-ms = <40>;
             bindings = <&kp equal &kp gt &kp space &kp lbrc &kp rbrc &kp left &kp ret>;
