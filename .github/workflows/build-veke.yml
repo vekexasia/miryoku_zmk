@@ -10,6 +10,8 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano_v2"]'
-      shield: '["temper_left","temper_right","settings_reset"]'
+      shield: '["temper_left","temper_right","settings_reset","redox_left","redox_right"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
+      kconfig: '["CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y","CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y"]
+
