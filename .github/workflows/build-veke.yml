@@ -13,5 +13,5 @@ jobs:
       shield: '["temper_left","temper_right","settings_reset"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
-      kconfig: '["CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y"]'
+      kconfig: '["CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
 
