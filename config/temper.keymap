@@ -14,9 +14,87 @@
             bindings = <&kp EQUAL &kp GT &kp SPACE &kp LBRC &kp RBRC &kp LEFT &kp RET>;
         };
         email: email {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <&kp V &kp E &kp K &kp E &kp X &kp A &kp S &kp I &kp A &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-      };
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp E &kp K &kp E &kp X &kp A &kp S &kp I &kp A &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+        };
+        // Italian accents (WinCompose on Windows, native compose on Linux)
+        agrave: agrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp RALT &kp GRAVE &kp A>;
+        };
+        egrave: egrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp RALT &kp GRAVE &kp E>;
+        };
+        igrave: igrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp RALT &kp GRAVE &kp I>;
+        };
+        ograve: ograve {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp RALT &kp GRAVE &kp O>;
+        };
+        ugrave: ugrave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp RALT &kp GRAVE &kp U>;
+        };
+        eacute: eacute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp RALT &kp SQT &kp E>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        // Italian accent combos: vowel + adjacent key
+        combo_agrave {
+            timeout-ms = <50>;
+            key-positions = <10 11>;  // A + S
+            bindings = <&agrave>;
+        };
+        combo_egrave {
+            timeout-ms = <50>;
+            key-positions = <2 3>;    // E + R
+            bindings = <&egrave>;
+        };
+        combo_igrave {
+            timeout-ms = <50>;
+            key-positions = <7 8>;    // I + O
+            bindings = <&igrave>;
+        };
+        combo_ograve {
+            timeout-ms = <50>;
+            key-positions = <8 9>;    // O + P
+            bindings = <&ograve>;
+        };
+        combo_ugrave {
+            timeout-ms = <50>;
+            key-positions = <6 7>;    // U + I
+            bindings = <&ugrave>;
+        };
+        combo_eacute {
+            timeout-ms = <50>;
+            key-positions = <1 2>;    // W + E
+            bindings = <&eacute>;
+        };
     };
 };

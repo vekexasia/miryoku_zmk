@@ -11,6 +11,8 @@ This document describes Miryoku ZMK only.  For Miryoku documentation, implementa
 
 See the [[docs/quickstart][Miryoku ZMK Quickstart Guide]] to have a personalised build running on your keyboard in a few minutes without installing any software or editing any files.
 
+For veke branch customizations (Temper keyboard, Italian accents, custom layers), see [[VEKE_BRANCH_DIFFERENCES.md][Veke Branch Documentation]].
+
 ** Overview
 
 [[#building][Building]] can be performed [[#local-builds][locally]], or via GitHub Actions [[#workflow-builds][workflows]] without use of a local build environment.  Many keyboards are [[#supported-keyboards][supported]], and building out-of-tree keyboards is automatically supported by the workflows.
