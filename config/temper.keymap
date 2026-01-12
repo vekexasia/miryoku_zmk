@@ -65,34 +65,34 @@
 
     combos {
         compatible = "zmk,combos";
-        // Italian accent combos: vowel + adjacent key
+        // Italian accent combos: vowel + adjacent key (25ms = strict timing)
         combo_agrave {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <10 11>;  // A + S
             bindings = <&agrave>;
         };
         combo_egrave {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <2 3>;    // E + R
             bindings = <&egrave>;
         };
         combo_igrave {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <7 8>;    // I + O
             bindings = <&igrave>;
         };
         combo_ograve {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <8 9>;    // O + P
             bindings = <&ograve>;
         };
         combo_ugrave {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <6 7>;    // U + I
             bindings = <&ugrave>;
         };
         combo_eacute {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <1 2>;    // W + E
             bindings = <&eacute>;
         };
